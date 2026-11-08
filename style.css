@@ -1,0 +1,183 @@
+:root {
+  --bg: #FBF8F4;
+  --text: #231F2E;
+  --muted: #5E5770;
+  --accent: #6E5AA8;
+  --rule: #E6DFD6;
+  --card: #F3EEE7;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1C1826;
+    --text: #EDE9F5;
+    --muted: #B3ABC6;
+    --accent: #B9A8F0;
+    --rule: #332C44;
+    --card: #252032;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 64px;
+}
+
+header.site {
+  margin-bottom: 32px;
+}
+
+header.site a.brand {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 40px 0 8px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 24px 0 4px;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 16px;
+}
+
+ul,
+ol {
+  padding-left: 1.3em;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+strong {
+  font-weight: 650;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.summary {
+  background: var(--card);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 24px 0 8px;
+}
+
+.summary h2 {
+  margin-top: 0;
+}
+
+.summary ul {
+  margin-bottom: 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.links li {
+  margin-bottom: 12px;
+}
+
+.links a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 40px 0 24px;
+}
+
+footer.site {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer.site nav a {
+  margin-right: 16px;
+}
+
+footer.site p {
+  margin: 8px 0 0;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .page {
+    padding: 28px 16px 48px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+}
